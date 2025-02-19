@@ -7,6 +7,74 @@
   <title>Layout & Position</title>
 </head>
 <body>
-  
+   <!-- Positioning -->
+    <div class="relative w-1/2 h-12 bg-red-200">
+      <p>parent Element</p>
+      <div class="absolute bottom-0 right-0 bg-red-500">
+        <p>Absolute Child</p>
+      </div>
+    </div>
+
+    <!-- Top left corner -->
+     <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 top-0 h-16 w-16 bg-yellow-300"></div>
+     </div>
+
+    <!-- Top right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 top-0 h-16 w-16 bg-yellow-300"></div>
+     </div>
+
+    <!-- Bottom left corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute left-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+     </div>
+
+    <!-- Bottom right corner -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute right-0 bottom-0 h-16 w-16 bg-yellow-300"></div>
+     </div>
+
+    <!-- Span top edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-x-0 top-0 h-16 bg-yellow-300"></div>
+     </div>
+
+    <!-- Span left edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-y-0 left-0 w-16 bg-yellow-300"></div>
+     </div>
+
+    <!-- Span right edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-y-0 right-0 w-16 bg-yellow-300"></div>
+     </div>
+
+    <!-- Span bottom edge -->
+    <div class="relative h-32 w-32 bg-yellow-100">
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-yellow-300"></div>
+     </div>
+
+    <!-- Display Classes -->
+     <div>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus <span class="inline font-bold">This is inline</span> saepe illum, tempora corrupti libero aliquid totam laborum animi facere amet? Velit tenetur eveniet aliquid nobis,<span class="inline-block font-bold">This is inline-block</span> exercitationem error iusto dolorem dicta. Omnis eius mollitia quas natus! Facere accusamus neque voluptatum <span class="clock font-bold">This is block</span> sapiente iusto autem similique voluptatem repellendus doloribus provident ab, at delectus modi numquam obcaecati sed? <span class="hidden font-bold">This is hidden</span> Animi facilis fugit harum adipisci exercitationem!
+    </div>
+
+    <!-- Z-Index -->
+     <div class="relative h-36">
+      <div class="absolute left-10 w-24 h-24 bg-blue-300">1</div>
+      <div class="absolute w-24 left-20 h-24 bg-blue-400 z-10">2</div>
+      <div class="absolute w-24 left-40 h-24 bg-blue-500 z-20">3</div>
+      <div class="absolute w-24 left-60 h-24 bg-blue-600 z-30">4</div>
+      <div class="absolute w-24 left-80 h-24 bg-blue-700 z-40">5</div>
+     </div>
+
+    <!-- Floats -->
+     <div class="w-1/2">
+      <img class="h-48 w-48 float-left m-4" src="../img/img1.jpg" alt="laptop">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est hic illum odio eligendi dolor architecto doloribus sit aut impedit quam, possimus autem perspiciatis minus itaque eum consectetur eos sunt dignissimos.
+      </p>
+     </div>
 </body>
 </html>
